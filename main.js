@@ -15,7 +15,7 @@ window.addEventListener("load", function(){
       }
   }
 
-segment = new segment(1,2,2,4);
+segment = new segment(100,100,100,4);
 
 draw();
 });

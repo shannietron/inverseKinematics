@@ -13,4 +13,10 @@ class segment {
   get EndY(){
   	return Math.cos(this.angle) * this.length + this.y;
   }
+  render(context){
+  	 	context.beginPath();
+    	context.moveTo(this.x, this.y);
+    	context.lineTo(this.EndX, this.EndY);
+    	context.stroke();
+  }
 }
