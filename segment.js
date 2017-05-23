@@ -2,16 +2,16 @@ class segment {
   constructor(x, y,length, angle ) {
     this.x = x; // start X coordinate
     this.y = y; // end Y coordinate
-	this.length = length;
+    this.length = length;
     this.angle = angle;
   }
 
   get EndX(){
-  	return  Math.cos(this.angle) * this.length + this.x;
+  	return  this.x + Math.cos(this.angle) * this.length;
   }
 
   get EndY(){
-  	return Math.cos(this.angle) * this.length + this.y;
+  	return this.y +Math.sin(this.angle) * this.length;
   }
   render(context){
   	 	context.beginPath();
