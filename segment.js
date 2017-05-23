@@ -16,6 +16,7 @@ class segment {
   render(context){
   	 	context.beginPath();
     	context.moveTo(this.x, this.y);
+    	context.lineWidth = 4;
     	context.lineTo(this.EndX, this.EndY);
     	context.stroke();
   }
